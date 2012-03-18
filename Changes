@@ -13,6 +13,9 @@ Revision history for DBIx::Class
         - dbicadmin now better supports catalyst-style config files, by
           unrolling 'config_info' hashkeys
         - MSSQL MARS over DBD::ODBC now works with freetds >= 0.91
+        - Lots of improvements for MSSQL+ADO including VARXXX(MAX) support,
+          stripping trailing NULLs from binary data, GUID normalization, and
+          transaction support
 
     * Fixes
         - Fix SkipFirst and FirstSkip limit dialects (Informix and Firebird)
